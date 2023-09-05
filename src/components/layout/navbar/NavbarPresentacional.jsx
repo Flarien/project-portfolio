@@ -2,9 +2,14 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import {navIcon1, navIcon2, navIcon3}  from '../../../assets/img';
 
 
-export const NavbarPresentacional = ({ scrolled, activeLink, onUpdateActiveLink }) => {
+export const NavbarPresentacional = ({
+  scrolled,
+  activeLink,
+  onUpdateActiveLink,
+}) => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
@@ -48,13 +53,14 @@ export const NavbarPresentacional = ({ scrolled, activeLink, onUpdateActiveLink 
           <span className="navbar-text">
             <div className="social-icon">
               <a href="#">
-                <img src="" alt="logo linkedin" />
+                <img src={navIcon1} alt="logo linkedin" />
               </a>
               <a href="#">
-                <img src="" alt="logo instagram" />
+                {" "}
+                <img src={navIcon2} alt="logo instagram" />{" "}
               </a>
               <a href="#">
-                <img src="" alt="logo github" />
+                <img src={navIcon3} alt="logo github" />
               </a>
               {/*  Aquí deberá ir la direccion de las redes sociales y el icon del logo  */}
             </div>
