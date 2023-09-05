@@ -1,8 +1,13 @@
 /* eslint-disable react/prop-types */
+import "./NavbarPresentacional.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import {navIcon1, navIcon2, navIcon3}  from '../../../assets/img';
+import logo from "../../../assets/img/logo.svg";
+import navIcon1 from "../../../assets/img/navIcon1.svg";
+import navIcon2 from "../../../assets/img/navIcon2.svg";
+import navIcon3 from "../../../assets/img/navIcon3.svg";
+
 
 
 export const NavbarPresentacional = ({
@@ -14,8 +19,7 @@ export const NavbarPresentacional = ({
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src="" alt="logo" />{" "}
-          {/*  Aquí deberá ir la imagen del logo/logo personal  */}
+          <img src={logo} alt="logo" />{" "}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -57,10 +61,10 @@ export const NavbarPresentacional = ({
               </a>
               <a href="#">
                 {" "}
-                <img src={navIcon2} alt="logo instagram" />{" "}
+                <img src={navIcon2} alt="logo facebook" />{" "}
               </a>
               <a href="#">
-                <img src={navIcon3} alt="logo github" />
+                <img src={navIcon3} alt="logo instagram" />
               </a>
               {/*  Aquí deberá ir la direccion de las redes sociales y el icon del logo  */}
             </div>
