@@ -8,8 +8,15 @@ function App() {
   return (
     <BrowserRouter className="App">
       <Routes>
-        <Route path="/" element={<NavbarContainer />} />
-        <Route path="/" element={<BannerContainer />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <NavbarContainer />
+              <BannerContainer />
+            </>
+          }
+        ></Route>
       </Routes>
     </BrowserRouter>
   );
